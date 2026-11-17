@@ -35,6 +35,11 @@ label {
 }
 
 input[type="text"],
+<<<<<<< HEAD
+=======
+input[type="email"],
+input[type="password"],
+>>>>>>> temp-branch
 input[type="date"],
 input[type="time"],
 select,
@@ -50,6 +55,11 @@ textarea {
 }
 
 input[type="text"]:focus,
+<<<<<<< HEAD
+=======
+input[type="email"]:focus,
+input[type="password"]:focus,
+>>>>>>> temp-branch
 input[type="date"]:focus,
 input[type="time"]:focus,
 select:focus,
@@ -63,6 +73,22 @@ textarea {
     resize: vertical;
 }
 
+<<<<<<< HEAD
+=======
+main {
+    width: 100%;
+    max-width: 510px;
+}
+
+main h1 {
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+>>>>>>> temp-branch
 button[type="submit"] {
     background-color: #7b4bf2;
     color: #ffffff;
@@ -78,4 +104,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #6536d9;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> temp-branch

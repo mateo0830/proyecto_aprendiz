@@ -16,7 +16,11 @@ body {
     width:70%;
     max-width: 700px;
     height: 1000px;
+<<<<<<< HEAD
     background : url('../imagenes/logo_odontologia_1.jpg') no-repeat ;
+=======
+    background : url('../images/logo_odontologia.jpg') no-repeat center / cover;
+>>>>>>> temp-branch
     border: #d3d3d3 1px solid ;
     margin-left: 150px;
     margin-top:20px;
@@ -74,6 +78,12 @@ color : #000000;
     background-color: #7092be;
 }
 
+<<<<<<< HEAD
 #menu li:activa,#menu li:hover {
     background-color: #7092be;
 }
+=======
+#menu li:active,#menu li:hover {
+    background-color: #7092be;
+}
+>>>>>>> temp-branch
