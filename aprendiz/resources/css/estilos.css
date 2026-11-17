@@ -1,127 +1,92 @@
-@charset "utf-8";
-/* CSS Document */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202c3b;
+    background: #f1f5f9;
+}
+
 body {
-background-color: #8964f0;
+    margin: 0;
+    padding: 24px;
 }
 
 #contenedor {
-font-size:1.1em;
-background-color: #bebeee;
-border:#d3d3d3 1px solid;
-text-align: justify;
-margin: 20px auto;
-width : 900px ;
-height: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #d7e0ea;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgb(15 23 42 / 8%);
 }
 
 #encabezado {
-width: 900px;
-height: 150px;
-background-image: url('../images/logo_odontologia.jpg');
-border: #d3d3d3 1px solid ;
-}
-
-#contenido {
-border: #d3d3d3 1px solid ;
-margin: 20px 20px 10px;
-padding: 10px 15px;
-}
-
-#contenido h2 {
-color : #0075ff;
-border-bottom: #CFBFB5 1px solid;
-
+    display: grid;
+    min-height: 180px;
+    place-items: center;
+    padding: 24px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(120deg, rgb(12 49 89 / 88%), rgb(12 49 89 / 52%)),
+        url('../images/logo_odontologia.jpg') center 42% / cover;
 }
 
 #encabezado h1 {
-text-align: center ;
-margin-top: 40px;
+    margin: 0;
+    font-size: clamp(1.6rem, 4vw, 2.5rem);
 }
 
 #menu {
-float: left;
-width: 120px;
-/* background-color: #91b2f0 ;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 14px 20px;
+    list-style: none;
+    background: #0c3159;
 }
 
-#menu li {
-border: #d3d3d3 3px solid;
-background-color: #0075ff;
-margin-bottom: 5px;
-font-size: 0.9em;
-text-align: center;
-line-height: 30px;
-
+#menu a,
+#menu span {
+    display: block;
+    padding: 10px 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
-#menu a {
-display: block;
-text-decoration: none;
-color : #000000;
+#menu a:hover,
+#menu a:focus-visible {
+    background: #1d5a91;
 }
 
-#menu li:hover {
-background-color: #7092be;
+#menu span[aria-disabled='true'] {
+    color: #c4d0dd;
 }
 
-#menu li:activa,#menu li:hover {
-background-color: #7092be;
+#contenido {
+    margin: 24px;
+    padding: 24px;
+    line-height: 1.6;
+    border: 1px solid #d7e0ea;
+    border-radius: 8px;
 }
 
-div#contenido {
-border: #d3d3d3 1px solid ;
-margin: 20px 20px 10px 180px;
-padding: 10px 15px;
+#contenido h2 {
+    margin-top: 0;
+    color: #0c568d;
 }
 
-#divContenedor {
-	width:1000px;
-	height:643px;
-	margin:0 auto;
-}
-#divEncabezado {
-	
-	left:25px;
-	top:25px;
-	width:981px;
-	height:82px;
-	z-index:2;
-	background-color: #fbec88;
-}
-#divMenu {
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
 
-	left:27px;
-	top:117px;
-	width:981px;
-	height:43px;
-	z-index:3;
-	/*background:#CCF*/
-}
-#divContenido {
-	
-	left:29px;
-	top:170px;
-	width:981px;
-	height:350px;
-	z-index:4;
-	overflow:auto
-	 
-}
-#divPiePagina {
-	
-	left:29px;
-	top:543px;
-	width:981px;
-	height:86px;
-	z-index:5;
-	background-color: #fbec88;
-}
+    #menu {
+        display: grid;
+    }
 
-.texto {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	color: #FFF;
+    #contenido {
+        margin: 14px;
+        padding: 18px;
+    }
 }
-
-
-
